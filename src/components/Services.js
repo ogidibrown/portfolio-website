@@ -10,6 +10,11 @@ const services =[
     link:'Learn More',
   },
   {
+    name:'Development ',
+    description:'I am eager to learn more skills and excited to continue growing as a web developer. I am a team player and I am always looking forward to working with a team to achieve a common goal.',
+    link:'Learn More',
+  },
+  {
     name:'Digital Marketing ',
     description:'Digital Marketting requires an advance level of problem-solving and analytical thinking. I have the ability to analyze and market to the public and visualize several possible ways to advertise to the world with the help of marketting tools like PowerBi and Google trends to acertain the best solution.',
     link:'Learn More',
@@ -22,8 +27,8 @@ const services =[
 ]
 
   return <section id='services' className='section'>
-            <div className="container mx-auto">
-              <div>
+            <div className="container mx-auto ">
+              <div className='flex flex-col lg:flex-row'>
                 {/*texts & image*/}
                 <div className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12'>
                   <h2 className='h2 text-accent mb-6'>What I Do</h2>
@@ -32,7 +37,28 @@ const services =[
                    <button className='btn btn-sm'>See My Work</button>
                 </div>
                 {/*services*/}
-                <div>Services</div>
+                <div>
+                  {/*service list*/}
+                  <div>
+                    {services.map((service)=>{
+                      
+                      return(
+                        <div className='border-b border-white/20 h-[140px] mb-[38px] flex'>
+                          <div className='max-w-[476px]'>
+                            <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{service.name}</h4>
+                            <p className='font-secondary leading-tight'>{service.description}</p>
+                          </div>
+                          <div className='flex flex-col flex-1'>
+                            <a href="#">
+                              <BsArrowUpRight/>
+                            </a>
+                            <a href="#">{service.link}</a>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
               </div>
             </div>
           </section>;
