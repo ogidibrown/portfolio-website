@@ -1,6 +1,7 @@
 import {BsArrowUpRight} from 'react-icons/bs'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 const Services = () => {
 const services =[
@@ -40,7 +41,7 @@ const services =[
                   <h2 className='h2 text-accent mb-6'>What I Do</h2>
                   <h3 className='h3 max-w-[455px] mb-16 '>I'm a Freelance Front-end Developer 
                    with over 2 years of experience</h3>
-                   <button className='btn btn-sm'>See My Work</button>
+                  <Link to='work'activeClass='active' smooth={true} spy={true}><button className='btn btn-sm'>See My Work</button></Link>  
                 </motion.div>
 
                 {/*services*/}

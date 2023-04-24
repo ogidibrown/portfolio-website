@@ -3,6 +3,7 @@ import {FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa'
 import {TypeAnimation} from 'react-type-animation'
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return <section id='home' className='min-h-[75vh] lg:min-h-[78vh] flex items-center'>
@@ -53,7 +54,7 @@ const Banner = () => {
                   whileInView={'show'} 
                   viewport={{once: false, amount:0.7}} 
                   className='flex max-w-max gap-x-6 items-center mb-8 mx-auto lg:mx-0'>
-                    <button className='btn btn-lg'>Contact Me</button>
+                   <Link to='contact' activeClass='active' smooth={true} spy={true} ><button className='btn btn-lg'>Contact Me</button></Link> 
                     <a href="#" className='text-gradient btn-link cursor-pointer'>My Portfolio</a>
                   </motion.div>
                   {/* socials*/}

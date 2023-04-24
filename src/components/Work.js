@@ -26,7 +26,7 @@ const Work = () => {
                       by enhance our technological way of living
                       
                     </p>
-                    <button className="btn btn-sm">View all Projects</button>
+                    <button className="btn btn-sm"><a target='_blank' href="https://github.com/ogidibrown/">View all Projects</a></button>
                   </div>
                   {/*image*/}
                   <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
