@@ -17,7 +17,7 @@ const services =[
   },
   {
     name:'Digital Marketing ',
-    description:'Digital Marketting requires an advance level of problem-solving and analytical thinking. I have the ability to analyze and market to the public and visualize several possible ways to advertise to the world with the help of marketting tools like PowerBi and Google trends to acertain the best solution.',
+    description:'Digital Marketting requires an advance level of problem-solving and analytical thinking. I have the ability to analyze the market and visualize several possible ways to advertise to the world with the help of marketting tools like PowerBi and Google trends.',
     link:'Learn More',
   },
   {
@@ -56,7 +56,7 @@ const services =[
                     {services.map((service)=>{
                       
                       return(
-                        <div className='border-b border-white/20 h-[140px] mb-[38px] flex'>
+                        <div className='border-b border-white/20 h-[150px] mb-[38px] flex'>
                           <div className='max-w-[476px]'>
                             <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{service.name}</h4>
                             <p className='font-secondary leading-tight'>{service.description}</p>
