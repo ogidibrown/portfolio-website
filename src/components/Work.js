@@ -66,7 +66,7 @@ const Work = () => {
                      </div>
                      {/*title*/}
                      <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                      <span className="text-3xl text-white">E-commerce Web App</span>
+                      <span className="text-3xl text-white">E-commerce</span>
                      </div>
                      {/*link*/}
                      <div className="absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-500 z-50">
@@ -85,7 +85,7 @@ const Work = () => {
                      </div>
                      {/*title*/}
                      <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                      <span className="text-3xl text-white">Community-Food Website</span>
+                      <span className="text-3xl text-white">Food Site</span>
                      </div>
                      {/*link*/}
                      <div className="absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-500 z-50">

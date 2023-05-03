@@ -28,7 +28,7 @@ const services =[
 ]
 
   return <section id='services' className='section'>
-            <div className="container mx-auto ">
+            <div className="container mx-auto mt-[280px] lg:mt-0">
               <div className='flex flex-col lg:flex-row'>
                 {/*texts & image*/}
                 <motion.div 
@@ -59,7 +59,7 @@ const services =[
                         <div className='border-b border-white/20 h-[150px] mb-[38px] flex'>
                           <div className='max-w-[476px]'>
                             <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{service.name}</h4>
-                            <p className='font-secondary leading-tight'>{service.description}</p>
+                            <p className='font-secondary leading-tight text-[12px] lg:text-[18px]'>{service.description}</p>
                           </div>
                           <div className='flex flex-col flex-1 items-end'>
                             <a href="#" className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>

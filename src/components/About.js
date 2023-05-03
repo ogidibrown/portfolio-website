@@ -11,7 +11,7 @@ const About = () => {
 
 
   return <section id='about' className='section' ref={ref}>
-           <div className="container mx-auto">
+           <div className="container mx-auto ">
             <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
             {/*img */}
             <motion.div 
@@ -73,7 +73,7 @@ const About = () => {
                   </div>
               </div>
              </div>
-             <div className='flex gap-x-8 items-center'>
+             <div className='flex gap-x-8 items-center '>
                 <Link to='contact' activeClass='active' smooth={true} spy={true} ><button className='btn btn-lg'>Contact Me</button></Link>  
                   <a className='text-gradient btn-link' href="#">My Portfolio</a>
                 </div>
